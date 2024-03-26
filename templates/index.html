@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ turbo() }}
+<h1>Messenger</h1>
+
+<form action="" method="post">
+  {% include "load_messages.html" %}
+
+  {{ form.hidden_tag() }}
+  {{ form.text() }}
+
+  <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+</form>
+{% endblock %}
