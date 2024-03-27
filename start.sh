@@ -1,3 +1,3 @@
-python -m pip install -U pip
-python -m pip install -r requirements.txt
-python server.py
+python3 -m pip install -U pip
+python3 -m pip install -r requirements.txt
+python3 server.py
