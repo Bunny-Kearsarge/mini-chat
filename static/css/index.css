@@ -1,0 +1,13 @@
+.send-message {
+    width: 700px;
+    margin: auto;
+    display: flex;
+}
+
+.text-input {
+    border-radius: 0 0 0 10px;
+}
+
+.btn {
+    border-radius: 0 0 10px 0;
+}

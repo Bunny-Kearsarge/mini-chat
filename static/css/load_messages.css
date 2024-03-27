@@ -1,0 +1,40 @@
+.load {
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    background-color: #0dcaf0;
+    border-radius: 10px 10px 0 0;
+    overflow-y: scroll;
+}
+
+.load::-webkit-scrollbar {
+    background-color: #7bd2e7;
+}
+
+.load::-webkit-scrollbar-thumb {
+    background-color: #3b73bd;
+}
+
+p {
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.overflow-box {
+    margin-top: 20px;
+    /*overflow: hidden;*/
+}
+
+.username {
+    padding: 3px 7px;
+    margin-right: 7px;
+    color: #c2c2b5;
+    font-weight: bold;
+
+    border-radius: 10px;
+    background-color: #0d6efd;
+}

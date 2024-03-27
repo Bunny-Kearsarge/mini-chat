@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/register.css') }}" />
+
+  <div class="box-center">
+    <form method="post">
+      <div class="form-inner">
+        <h1>Register</h1>
+        {{ form.hidden_tag() }}
+        
+        <label class="mb-3">
+          <p>Login</p>
+          {{ form.login(class = 'form-control') }}
+        </label>
+        <label class="mb-3">
+          <p>Password</p>
+          {{ form.password(class = 'form-control', type = 'password') }}
+        </label>
+        <label>
+          <p>Username</p>
+          {{ form.username(class = 'form-control') }}
+        </label>
+        <p>{{ form.submit(class = 'btn btn-primary', type = 'submit') }}</p>
+        <p class="error">{{ error }}</p>
+      </div>
+    </form>
+  </div>
+{% endblock %}
